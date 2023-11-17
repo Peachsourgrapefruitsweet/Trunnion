@@ -1,25 +1,336 @@
-<UI version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>TrunnionClass</class>
- <widget class="QDialog" name="TrunnionClass" >
-  <property name="objectName" >
-   <string notr="true">TrunnionClass</string>
-  </property>
-  <property name="geometry" >
+ <widget class="QDialog" name="TrunnionClass">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>831</width>
+    <height>703</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Trunnion</string>
-  </property>$centralwidget$
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_3" rowstretch="1,4,1,1">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="1" column="0" colspan="4">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Trunnion.qrc">:/Trunnion/res/AXA-1(576x410).png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>规格-吊重-垫板厚</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="3">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Trunnion.qrc">:/Trunnion/res/AXA-2(515x200).png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_19"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>吊耳类型</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="text">
+             <string>AXA</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="text">
+             <string>AXB</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_3">
+            <property name="text">
+             <string>AXC</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,1">
+        <property name="leftMargin">
+         <number>6</number>
+        </property>
+        <property name="topMargin">
+         <number>6</number>
+        </property>
+        <property name="rightMargin">
+         <number>6</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_DN">
+          <property name="text">
+           <string>吊耳公称直径</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="comboBox_DN"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>筒体内径</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_11"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>筒体壁厚</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_12"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>垫板厚度</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_13"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>设备直径范围</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="lineEdit_14"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>单个吊重</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="lineEdit_15"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>单个吊耳重</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="lineEdit_16"/>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>垫板材料</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="lineEdit_17"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>轴耳材料</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="lineEdit_18"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="2" column="3" colspan="2">
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string/>
+       </property>
+       <layout class="QGridLayout" name="gridLayout" columnstretch="1,3,1,3,1,3">
+        <property name="leftMargin">
+         <number>6</number>
+        </property>
+        <property name="topMargin">
+         <number>6</number>
+        </property>
+        <property name="rightMargin">
+         <number>6</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;D&lt;span style=&quot; vertical-align:sub;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;D&lt;span style=&quot; vertical-align:sub;&quot;&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLineEdit" name="lineEdit_3"/>
+        </item>
+        <item row="0" column="4">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;D&lt;span style=&quot; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QLineEdit" name="lineEdit_4"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>L</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_5"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>S</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="lineEdit_6"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;S&lt;span style=&quot; vertical-align:sub;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLineEdit" name="lineEdit_7"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>U</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_8"/>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;W&lt;span style=&quot; vertical-align:sub;&quot;&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="lineEdit_9"/>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>T</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QLineEdit" name="lineEdit_10"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
-   <include location="Trunnion.qrc"/>
+  <include location="Trunnion.qrc"/>
  </resources>
  <connections/>
-</UI>
+</ui>

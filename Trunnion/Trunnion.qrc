@@ -1,4 +1,6 @@
 <RCC>
-    <qresource prefix="Trunnion">
-    </qresource>
+  <qresource prefix="Trunnion">
+    <file>res/AXA-1(576x410).png</file>
+    <file>res/AXA-2(515x200).png</file>
+  </qresource>
 </RCC>

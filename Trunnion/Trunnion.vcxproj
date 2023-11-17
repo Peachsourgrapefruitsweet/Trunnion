@@ -17,9 +17,8 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A91FC06F-7384-4322-97C3-84B1DB05CE9D}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
-
-    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')"
-      >$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -49,15 +48,12 @@
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
-    <QtInstall>msvc2017_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtInstall>5.9.1_msvc2015</QtInstall>
+    <QtModules>core;sql;gui;widgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
-  <Target Name="QtMsBuildNotFound"
-    BeforeTargets="CustomBuild;ClCompile"
-    Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
-    <Message Importance="High"
-      Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
   </Target>
   <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="Shared" />
@@ -117,12 +113,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtRcc Include="Trunnion.qrc"/>
-    <QtUic Include="Trunnion.ui"/>
-    <QtMoc Include="Trunnion.h"/>
-    <ClCompile Include="Trunnion.cpp"/>
-    <ClCompile Include="main.cpp"/>
-
+    <QtRcc Include="Trunnion.qrc" />
+    <QtUic Include="Trunnion.ui" />
+    <QtMoc Include="Trunnion.h" />
+    <ClCompile Include="Trunnion.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
